@@ -8,4 +8,5 @@ class users(BaseModel):
 
 @app.post("/")
 def create_user(data:users):
+    print(users)
     return {"message":data} 
