@@ -12,3 +12,7 @@ app.add_middleware(
 @app.get("/")
 def home():
     return {"data":"name is darsh"}
+
+@app.get("/fetch")
+def fetch_details():
+    return {"data":"details of products"}
